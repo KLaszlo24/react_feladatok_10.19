@@ -1,5 +1,5 @@
 
-type OsztalyAdatokProps = {
+interface OsztalyAdatokProps {
   jelenlevok: number;
   hangulat: string;
 };

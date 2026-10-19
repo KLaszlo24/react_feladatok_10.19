@@ -1,5 +1,5 @@
 
-type OsztalyVezerloProps = {
+interface OsztalyVezerloProps{
   jelenletNovelese: () => void;
   jelenletCsokkentese: () => void;
   hangulatValtoztatas: () => void;
