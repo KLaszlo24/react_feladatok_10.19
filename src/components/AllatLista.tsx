@@ -39,11 +39,6 @@ export function AllatLista({allatok, eletkorNovelese, allatTorlese, allatokEletk
                   </button>
 
                   <button
-                  className="btn btn-warning btn-sm"
-                  onClick={allatokEletkorNoveles}> Mindewn állathoz életkor növelés
-                  </button>
-
-                  <button
                     className="btn btn-danger btn-sm"
                     onClick={() => allatTorlese(allat.id)}>Törlés
                   </button>
@@ -52,6 +47,11 @@ export function AllatLista({allatok, eletkorNovelese, allatTorlese, allatokEletk
             ))}
           </ul>
         )}
+        <button
+            className="btn btn-warning btn-sm d-block mx-auto"
+            //style={{alignItems="center"}}
+            onClick={allatokEletkorNoveles}> Mindewn állathoz életkor növelés
+        </button>
       </div>
     </div>
   );
