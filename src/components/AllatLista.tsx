@@ -5,9 +5,10 @@ interface AllatListaProps {
   allatok: Allat[];
   eletkorNovelese: (id: number) => void;
   allatTorlese: (id: number) => void;
+  allatokEletkorNoveles: () => void
 };
 
-export function AllatLista({allatok, eletkorNovelese, allatTorlese,}: AllatListaProps) {
+export function AllatLista({allatok, eletkorNovelese, allatTorlese, allatokEletkorNoveles}: AllatListaProps) {
   return (
     <div className="card shadow mt-4">
       <div className="card-body">
@@ -35,6 +36,11 @@ export function AllatLista({allatok, eletkorNovelese, allatTorlese,}: AllatLista
                   <button
                     className="btn btn-success btn-sm"
                     onClick={() => eletkorNovelese(allat.id)}>Kor növelése
+                  </button>
+
+                  <button
+                  className="btn btn-warning btn-sm"
+                  onClick={allatokEletkorNoveles}> Mindewn állathoz életkor növelés
                   </button>
 
                   <button

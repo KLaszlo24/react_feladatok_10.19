@@ -84,6 +84,18 @@ function App(){
   }
 
 
+  //10.20 - Extra feladat, mert a tobbi mar megvan
+
+  function allatokEletkorNoveles() {
+  setAllatok((elozoAllatok) =>
+    elozoAllatok.map((allat) => ({
+      ...allat,
+      kor: allat.kor + 1,
+    }))
+  );
+}
+
+
 
 
 
@@ -126,6 +138,7 @@ function App(){
         allatok={allatok}
         eletkorNovelese={eletkorNovelese}
         allatTorlese={allatTorlese}
+        allatokEletkorNoveles={allatokEletkorNoveles}
       />
     </div>
 
